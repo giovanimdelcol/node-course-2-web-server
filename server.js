@@ -67,6 +67,12 @@ app.get('/about',(req,res)=> {
  // res.send('About Page');
 });
 
+app.get('/projects',(req,res)=> {
+    res.render('projects.hbs',{
+        pageTitle:'Projects Portfolio :)'
+    });
+});
+
 app.get('/bad', (req, res)=>{
     res.send({
       msg:'Erro - nao foi possivel carregar'  
